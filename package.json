@@ -1,22 +1,24 @@
 {
-  "name": "wappalyzer-wrapper",
-  "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/silktide/wappalyzer-wrapper.git"
-  },
-  "description": "PHP wrapper for Wappalyzer technology detection library.",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "wappalyzer": "5.8.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Silktide Ltd",
-  "license": "GPL-3.0"
+    "name": "wappalyzer-wrapper",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/silktide/wappalyzer-wrapper.git"
+    },
+    "description": "PHP wrapper for Wappalyzer technology detection library.",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "wappalyzer": "5.8.2",
+        "puppeteer-cluster": "*",
+        "puppeteer": "*"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Silktide Ltd",
+    "license": "GPL-3.0"
 }
