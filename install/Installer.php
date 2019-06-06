@@ -29,7 +29,7 @@ class Installer implements PluginInterface, EventSubscriberInterface
         $output = $event->getIo();
         $composer = $event->getComposer();
         $wappalyzerWrapperDirectory = $composer->getInstallationManager()->getInstallPath(
-            $composer->getRepositoryManager()->findPackage("silktide/wappalyzer-wrapper", "*")
+            $composer->getRepositoryManager()->findPackage("mihaivinaga/wappalyzer-wrapper", "*")
         );
 
         exec('npm -v', $npmVersion, $exitCode);
@@ -48,6 +48,6 @@ class Installer implements PluginInterface, EventSubscriberInterface
 
         $packageJsonFilename = $wappalyzerWrapperDirectory . "/node_modules/wappalyzer/package.json";
         $version = json_decode(file_get_contents($packageJsonFilename), true);
-        $output->write("<info>Wappalyzer Version: ".$version["_spec"]."</info>");
+        $output->write("<info>Wappalyzer Version: " . $version["_spec"] . "</info>");
     }
 }
