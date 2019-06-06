@@ -1,5 +1,5 @@
 {
-    "name": "mihaivinaga/wappalyzer-wrapper",
+    "name": "silktide/wappalyzer-wrapper",
     "description": "Wrapper for wappalyzer technology detection.",
     "type": "composer-plugin",
     "require": {
